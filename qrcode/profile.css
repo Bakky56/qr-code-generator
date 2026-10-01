@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #f3f4f6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+main {
+  width: 100%;
+  max-width: 420px;
+
+  background: #ffffff;
+
+  padding: 45px 30px;
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+#profileImage {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 25px;
+}
+
+#profileName {
+  font-size: 30px;
+
+  font-weight: 700;
+
+  color: #111827;
+}
+
+main::after {
+  content: 'Digital Profile';
+
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 15px;
+
+  color: #6b7280;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 15px;
+  }
+
+  main {
+    padding: 35px 20px;
+
+    border-radius: 20px;
+  }
+
+  #profileImage {
+    width: 130px;
+    height: 130px;
+  }
+
+  #profileName {
+    font-size: 26px;
+  }
+}
