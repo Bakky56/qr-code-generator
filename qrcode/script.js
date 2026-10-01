@@ -44,7 +44,7 @@ generatorButton.addEventListener('click', async (e) => {
     .getPublicUrl(fileName);
 
   const imageUrl = publicUrlData.publicUrl;
-  const profileUrl = `profile.htm?name=${encodeURIComponent(name)}&image=${encodeURIComponent(imageUrl)}`;
+  const profileUrl = `profile.html?name=${encodeURIComponent(name)}&image=${encodeURIComponent(imageUrl)}`;
   qrCode.innerHTML = '';
 
   new QRCode(qrCode, {
