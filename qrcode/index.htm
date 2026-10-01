@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>QR Profile Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>QR Profile Generator</h1>
+
+      <form id="qrForm">
+        <label for="textInput"> Name </label>
+
+        <input type="text" id="textInput" placeholder="Enter your name" />
+
+        <label for="imageInput"> Choose Image </label>
+
+        <input type="file" id="imageInput" accept="image/*" />
+
+        <button type="submit" id="generatorButton">Generate QR</button>
+      </form>
+
+      <section id="result">
+        <img id="imgdisplay" src="" alt="Selected profile image" />
+
+        <h2 id="displayName"></h2>
+
+        <div id="qrCode"></div>
+      </section>
+    </main>
+
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script src="script.js"></script>
+  </body>
+</html>
